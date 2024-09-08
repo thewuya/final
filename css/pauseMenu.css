@@ -1,0 +1,106 @@
+/* NES Style Pause Menu */
+@font-face {
+    font-family: 'pixel-hanzi';
+    src: url('../fonts/hzk-pixel-16px.ttf');
+}
+
+
+.menu {
+    position: fixed; /* Fixed position to cover the screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f4f1e3; /* Updated background color */
+    border: 4px solid #705335; /* White border */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px #fff; /* White glow effect */
+    font-family: 'pixel-hanzi', cursive; /* NES-style font */
+    z-index: 1000; /* Ensure the menu is above other elements */
+}
+
+.menu h2 {
+    color: #000; /* Black text for the title */
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a, .menu button {
+    display: block;
+    width: 200px; /* Same length for all buttons */
+    padding: 14px 0; /* Adjusted padding */
+    text-align: center;
+    font-size: 1.2rem; /* Consistent font size */
+    background-color: #e08356; /* Button color */
+    color: #fff; /* Text color */
+    border: 3px solid #c94b28; /* Border color */
+    margin: 8px auto; /* Center align and margin */
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0px 4px 0px #c94b28; /* Shadow effect */
+    clip-path: polygon(
+        0px calc(100% - 2px),
+        2px calc(100% - 2px),
+        2px 100%,
+        calc(100% - 2px) 100%,
+        calc(100% - 2px) calc(100% - 2px),
+        100% calc(100% - 2px),
+        100% 2px,
+        calc(100% - 2px) 2px,
+        calc(100% - 2px) 0px,
+        2px 0px,
+        2px 2px,
+        0px 2px
+    );
+    transition: all 0.3s ease;
+    outline: none;
+    font-family: inherit;
+}
+
+.menu a:hover, .menu button:hover {
+    background-color: #c94b28; /* Change color on hover */
+}
+
+/* Pixelated Button for Showing Menu */
+.btn-pixel {
+    width: 60px; /* Custom width for pause button */
+    height: 60px; /* Custom height for pause button */
+    background-color: #e08356; /* Button color */
+    color: #fff; /* Text color */
+    border: 3px solid #c94b28; /* Border color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0px 4px 0px #c94b28; /* Shadow effect */
+    clip-path: polygon(
+        0px 0px,
+        0px 100%,
+        100% 100%,
+        100% 0px,
+        0px 0px
+    ); /* Pixelated effect */
+    text-align: center;
+    font-size: 1.8rem; /* Font size for pause symbol */
+    margin: 10px;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.btn-pixel:hover {
+    background-color: #c94b28; /* Change color on hover */
+}
+
+

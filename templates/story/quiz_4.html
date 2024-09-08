@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Scroll Story - 第十关</title>
+    <link rel="stylesheet" href="../../css/pauseMenu.css">
+    <link rel="stylesheet" href="../../css/story.css">
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+        </ul>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="scroll-top">
+            <div class="scroll-curl"></div>
+        </div>
+        
+        <div class="scroll-container">
+            <button id="show-pause-menu" class="btn-retro">||</button>
+            <h1 class="scroll-title">第三关</h1>
+            <p>这个level没有故事</p>
+            
+        </div>
+
+        <!-- Scroll bottom decoration -->
+        <div class="scroll-bottom">
+            <div class="scroll-curl"></div>
+            
+        </div>
+    </div>
+
+    <script src="../../js/pauseMenu.js"></script>
+</body>
+</html>

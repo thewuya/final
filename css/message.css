@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'pixel-hanzi';
+    src: url('../fonts/hzk-pixel-16px.ttf');
+}
+
+body {
+    background-color: #f4f1e3; /* Old book paper color */
+    font-family: 'pixel-hanzi', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.book-wrapper {
+    width: 100%;
+    max-width: 1000px; /* Increased width for larger screens */
+    height: auto;
+    background: linear-gradient(135deg, #f0e6d2 25%, #e4d5b7 25%, #e4d5b7 50%, #f0e6d2 50%, #f0e6d2 75%, #e4d5b7 75%, #e4d5b7 100%);
+    background-size: 10px 10px; /* 8-bit pixelated paper look */
+    padding: 30px; /* Increased padding for better spacing */
+    border: 10px solid #705335; /* Increased border size */
+    box-shadow: 8px 8px 0 #8b6e4b, 16px 16px 0 #d1b395; /* Enhanced shadow for better depth */
+    text-align: center;
+}
+
+.book-content {
+    padding: 30px; /* Increased padding for readability */
+    background-color: #fff7e6; /* Light color inside the book */
+    border: 3px dashed #705335;
+}
+
+.message-list {
+    margin-bottom: 20px; /* Increased margin for spacing */
+    padding: 15px; /* Increased padding for readability */
+    background-color: #f4f1e3;
+    border: 2px dashed #705335;
+    max-height: 200px; /* Increased max-height for better view */
+    overflow-y: auto;
+}
+
+.friend-select {
+    margin-bottom: 20px; /* Increased margin for spacing */
+}
+
+.friend-select label {
+    font-size: 20px; /* Increased font size for better readability */
+    color: #705335;
+    margin-right: 10px;
+}
+
+#friendList {
+    font-family: 'pixel-hanzi', sans-serif;
+    font-size: 20px; /* Increased font size for better readability */
+    padding: 10px; /* Increased padding for better touch targets */
+    border: 2px solid #705335;
+    background-color: #f4f1e3;
+    color: #705335;
+    cursor: pointer;
+    outline: none;
+    appearance: none; /* Remove default dropdown arrow for customization */
+    background-image: url('../images/arrow-down.png'); /* Custom arrow image */
+    background-repeat: no-repeat;
+    background-position: right 15px center; /* Adjusted position of custom arrow */
+    background-size: 16px 16px; /* Adjusted size of custom arrow */
+}
+
+#friendList:hover {
+    border-color: #8b6e4b;
+    background-color: #fff7e6;
+}
+
+#friendList option {
+    background-color: #f4f1e3;
+    color: #705335;
+    font-size: 20px; /* Increased font size for better readability */
+    padding: 10px; /* Increased padding for better touch targets */
+}
+
+.message-form {
+    margin-bottom: 20px; /* Increased margin for spacing */
+}
+
+input[type="text"] {
+    width: 90%; /* Increased width for better readability */
+    padding: 10px; /* Increased padding for better touch targets */
+    border: 2px solid #705335;
+    background-color: #f4f1e3;
+    font-size: 20px; /* Increased font size for better readability */
+}
+
+.send-button {
+    font-family: 'pixel-hanzi';
+    font-size: 20px; /* Increased font size for better readability */
+    padding: 10px 15px; /* Increased padding for better touch targets */
+    background-color: #705335;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; /* Increased margin for spacing */
+}
+
+.send-button:hover {
+    background-color: #8b6e4b;
+}
+
+@media screen and (max-width: 480px) {
+    .book-wrapper {
+        width: 100%;
+        padding: 20px; /* Increased padding for better touch targets */
+        border-width: 5px; /* Adjusted border size for smaller screens */
+        box-shadow: 5px 5px 0 #8b6e4b, 10px 10px 0 #d1b395; /* Adjusted shadow for smaller screens */
+    }
+
+    .book-content {
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 18px; /* Adjusted font size for better readability */
+        padding: 10px; /* Adjusted padding for better touch targets */
+    }
+
+    .friend-select label,
+    #friendList,
+    #friendList option,
+    .message-form input[type="text"],
+    .send-button {
+        font-size: 18px; /* Adjusted font size for better readability */
+    }
+}
+
+.message {
+    font-family: 'pixel-hanzi';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Increased padding for better touch targets */
+    border-bottom: 1px solid #705335;
+}
+
+.delete-button {
+    font-family: 'pixel-hanzi';
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px; /* Increased padding for better touch targets */
+    font-size: 16px; /* Increased font size for better readability */
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #e60000;
+}

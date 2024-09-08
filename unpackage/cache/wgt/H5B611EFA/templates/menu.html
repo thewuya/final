@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pixelart</title>
+
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/back_button.css">
+
+</head>
+<body>
+    <a  id="logoutButton"  class="small-retro music-retro">登出</a>
+    <div class="menu">
+        
+        <ul>
+            <li><a href="profile.html" class="btn-retro">客户</a></li>
+            <li><a href="menu_experience.html" class="btn-retro">开始</a></li>
+            <li><a href="ranking.html" class="btn-retro">排名</a></li>
+            <li><a href="message.html" class="btn-retro">信封</a></li>
+            <img id = "speaker" onclick = "play_music()" style="width: 40px; height: 40px;" src="../pictures/speaker.png">
+            
+            
+        </ul>
+    </div>
+
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

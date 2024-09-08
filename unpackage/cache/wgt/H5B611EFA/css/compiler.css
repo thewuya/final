@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'pixel-hanzi';
+    src: url('../fonts/hzk-pixel-16px.ttf'); 
+}
+
+body {
+    font-family: 'pixel-hanzi', 'cursive'; /* Retro pixel font */
+    cursor: url("../pictures/sword_2.cur"), auto;
+    background-color: #f4f1e3; /* Light beige background */
+    color: #705335; /* Dark brown text color */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #8b6e4b; /* Darker brown for headers */
+    margin-top: 20px;
+    font-size: 2em;
+}
+#editor {
+    width: calc(100% - 40px);
+    height: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 3px solid #705335; /* Dark brown border */
+    background-color: #f4f1e3; /* Light beige background */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+}
+
+#output, #expected-output {
+    margin: 20px auto;
+    padding: 10px;
+    border: 3px solid #705335; /* Dark brown border */
+    background-color: #f7f7f7; /* Light gray background for output */
+    width: calc(100% - 40px);
+    max-width: 800px;
+}
+#expected-output {
+    background-color: #8b6e4b; /* Darker brown for expected output */
+    color: #f4f1e3; /* Light beige text color */
+    font-weight: bold;
+}
+
+.button-container {
+    font-family: 'pixel-hanzi', 'cursive';
+    margin-top: 20px;
+}
+
+
+button {
+    font-family: 'pixel-hanzi', 'cursive';
+    background-color: #705335; /* Dark brown button background */
+    color: #f4f1e3; /* Light beige text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #8b6e4b; /* Change color on hover */
+}
+@media (max-width: 600px) {
+    #editor, #output, #expected-output {
+        width: calc(100% - 20px);
+    }
+}
+
+#expected-output{
+    text-align: left;
+    color: white;
+}
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Scroll Story - 第九关</title>
+    <link rel="stylesheet" href="../../css/pauseMenu.css">
+    <link rel="stylesheet" href="../../css/story.css">
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+        </ul>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="scroll-top">
+            <div class="scroll-curl"></div>
+        </div>
+        
+        <div class="scroll-container">
+            <button id="show-pause-menu" class="btn-retro">||</button>
+            <h1 class="scroll-title">第九关</h1>
+            
+            <!-- Story Content -->
+            <p>眼看着怪物们倒下了一大半，我越战越勇。这时一只身躯巨大、眼露凶光的狼妖出现了。它浑身被一团黑气所笼罩，双目血红，犹如两个炽热的火炭。它嘴角上扬，露出一抹残忍的笑容，森白的尖牙在月光下泛着寒光。</p>
+            <p>“原来是你们这群邪魔歪道！竟敢如此肆虐人间！”袁麻冷冷地盯着狼妖，眼中满是怒火。</p>
+            <p>“呵呵，歪魔邪道？在绝对的力量面前，什么善恶正邪都是一场笑话！弱肉强食，才是亘古不变的真理！我们妖族修习魔宗编程，就是要让你们这些人类，臣服在我们脚下！”狼妖不屑地冷笑道。</p>
+            <p>“胡说八道！”袁麻喝到，“妖族虽天生妖力强大，但若背离天道，终究难成大器！我青云门的代码剑术，就是要斩妖除魔，替天行道，匡扶正义！”</p>
+            <p>下一刻，狼妖一声令下，无数道妖气喷涌而出，如黑色利箭，直奔我们而来。</p>
+            <p>“铮！”</p>
+            <p>袁麻大喝一声，手中长剑出鞘，剑光如虹，气势恢宏。只见他每一剑挥出，都蕴含一串复杂精妙的代码，宛如流星划过夜空，将漫天妖气尽数斩落！</p>
+            <p>我连忙运起全身灵力，手中长剑挽出一个剑花，与扑面而来的妖气硬碰硬地抵挡在一起。虽觉得手臂酸麻，浑身大汗淋漓，却也咬牙坚持，丝毫不敢松懈。</p>
+            <p>另一边，袁麻和狼妖斗得难解难分。只见狼妖凶恶异常，爪牙并用，妖气纵横。袁麻则从容不迫，招招制敌于无形。剑光与妖气在空中激烈碰撞，发出震天的巨响!</p>
+            <p>忽然，狼妖仰天发出一声悲愤的嚎叫。只见它双目血红，毛发根根倒竖，浑身妖气暴涨，身形竟开始急速膨胀起来！转眼间，狼妖已化作百丈高的庞然巨物，遮天蔽日!它张开血盆大口，长舌如剑，直扑我们而来！狂化后的魔狼，力大无穷，几乎无坚不摧。就连袁麻的剑阵，也在它的冲击下岌岌可危。而我更是被它的妖气逼得节节后退，险象环生，</p>
+            <p>千钧一发之际，袁麻忽然朗声说道：“李星，你可还记得《玄甲天书》上记载的破妖秘术？我恍然大悟：“师父是说，那个能破解妖兽狂化的‘代码封印’”</p>
+            <p>“不错！”袁麻点头道，“此刻正是使用这个秘术的时候！你我联手，定能将这妖兽擒拿！”</p>
+            <p>我心头大定，飞快地在脑海中搜寻相关篇章。</p>
+            <p>（请完成后两节习题，帮助我使出“代码封印”）</p>
+            <p>闯关失败：请再次尝试！</p>
+            <p>闯关成功：我双手飞快结印，口中默念咒语，顷刻间，一段玄奥的代码被我催动到了极致！随着代码的催动，一道金光从我掌心射出，化成一张巨大的网，朝狂化的魔狼当头罩下！</p>
+        </div>
+
+        <!-- Scroll bottom decoration -->
+        <div class="scroll-bottom">
+            <div class="scroll-curl"></div>
+        </div>
+    </div>
+
+    <script src="../../js/pauseMenu.js"></script>
+</body>
+</html>

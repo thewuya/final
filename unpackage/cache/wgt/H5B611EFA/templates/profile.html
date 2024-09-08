@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../css/profile.css"> <!-- Link to your custom CSS -->
+    <link rel="stylesheet" href="../css/back_button.css">
+</head>
+<body>
+    <a href="menu.html" class="small-retro back-retro" style="color: white; text-decoration: none;">回去</a>
+    <div class="container">
+        <header class="text-center mb-4">
+            <img src="../pictures/man.png" alt="Profile Picture" class="profile-img">
+            <h1 style="color: #A0522D;">角色档案</h1> <!-- Updated text color -->
+            <!-- Logout Button -->
+            <button id="logoutButton" class="btn btn-danger mt-3">登出</button>
+        </header>
+        <div class="profile-info p-4 rounded">
+            <p>用户名: <span id="username"></span></p>
+            <p>密码: <span id="password"></span></p>
+            <p>经验: <span id="experience"></span> XP</p>
+            <p>完成: <span id="lessonCompleted"></span>/100</p>
+        </div>
+        <section class="friends mt-4">
+            <h2 style="color: #A0522D;">朋友</h2> <!-- Updated text color -->
+            <ul id="friends" class="list-group">
+                <!-- Friends will be dynamically loaded here -->
+            </ul>
+        </section>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+</html>

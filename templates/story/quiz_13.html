@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Scroll Story - 第八关</title>
+    <link rel="stylesheet" href="../../css/pauseMenu.css">
+    <link rel="stylesheet" href="../../css/story.css">
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+        </ul>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="scroll-top">
+            <div class="scroll-curl"></div>
+        </div>
+        
+        <div class="scroll-container">
+            <button id="show-pause-menu" class="btn-retro">||</button>
+            <h1 class="scroll-title">第八关</h1>
+            
+            <!-- Story Content -->
+            <p>这天，我正在练功场上修炼，忽然听到一阵喧哗声。</p>
+            <p>“听说了吗？东林寺出事了，好像是遭到了妖兽的袭击！”</p>
+            <p>“是啊，听说伤亡不少，连寺庙都被毁了！”</p>
+            <p>“那可怎么办？东林寺离我们这么近，不会有危险吧？”</p>
+            <p>我心中一惊，连忙放下剑，跑到袁麻的居所。</p>
+            <p>“师父，弟子听说东林寺遭到了袭击，不知师父可有应对之策？”我恭敬地问道。</p>
+            <p>袁麻皱了皱眉，沉吟片刻，说道：“东林寺是我们的友寺，我门青云门不能袖手旁观。陈煦缘，你跟为师去一趟东林寺，看看能否帮上什么忙。”</p>
+            <p>我连连点头，袁麻带着我和几位师兄师姐离开了青云门。</p>
+            <p>暮色渐浓，天边残阳如血。我们终于赶到了东林寺，眼前的景象让我们大吃一惊。曾经庄严肃穆的东林寺，此刻满目疮痍。寺门被撞得粉碎，墙壁上到处是深深的爪痕。寺院内更是一片狼藉，古老的佛像被砸得粉碎，珍贵的经书被撕得粉碎，到处都是鲜血和残肢断臂。许多僧人躺在地上，呻吟不止，或头破血流，或身负重伤，眼中满是绝望和恐惧。</p>
+            <p>袁麻快步上前查看伤者的情况，他紧皱眉头，面色凝重。我也感到十分揪心，我从未见过如此惨烈的场面。</p>
+            <p>“这到底是怎么回事？”袁麻问道，声音里带着一丝颤抖。</p>
+            <p>一位年轻的僧人勉强支撑着坐起身，他脸色苍白如纸，声音微弱而断断续续：“昨晚，忽然来了一群凶恶的妖兽……为首的是一只巨大的狼妖……他们冲进寺庙见人就杀……我门根本无力抵抗。”</p>
+            <p>袁麻叹了口气：“看来这次袭击东林寺的就是……修炼‘魔宗编程’那些魔道妖孽。”</p>
+            <p>就在这时，一个尖利刺耳的声音忽然响起：“哈哈哈！没想到青云门的人也来了！正好，我要你们都葬身于此，给我们魔宗扬名立万！”</p>
+            <p>话音刚落，一大群妖兽出现在寺院的断壁残垣上，有凶猛的熊、老虎，有狡诈的狐狸、豺狼，还有些说不出名堂的怪物。下一秒，它们就朝我们发起攻击。</p>
+            <p>（请完成后两节练习题，与师兄师姐一起对抗怪物）</p>
+            <p>闯关失败：眼看怪物向你袭来，你却一时紧张使不出剑术。突然一道剑光劈来，眼前的怪物重重倒下，回头一看原来是师兄，他把你扶了起来。</p>
+            <p>闯关成功：眼看怪物向你袭来，你沉着冷静回想自己练过的剑术，长剑出鞘，砰的一声巨响，眼前的怪物重重倒地。</p>
+        </div>
+
+        <!-- Scroll bottom decoration -->
+        <div class="scroll-bottom">
+            <div class="scroll-curl"></div>
+        </div>
+    </div>
+
+    <script src="../../js/pauseMenu.js"></script>
+</body>
+</html>

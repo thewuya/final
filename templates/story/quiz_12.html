@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Scroll Story - 第七关</title>
+    <link rel="stylesheet" href="../../css/pauseMenu.css">
+    <link rel="stylesheet" href="../../css/story.css">
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+        </ul>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="scroll-top">
+            <div class="scroll-curl"></div>
+        </div>
+        
+        <div class="scroll-container">
+            <button id="show-pause-menu" class="btn-retro">||</button>
+            <h1 class="scroll-title">第七关</h1>
+            
+            <!-- Story Content -->
+            <p>就这样，我们在青云门开始了修炼，每天和师兄姐们一起练剑，研究代码。渐渐地我发现，编程和修仙有许多相同之处。优化代码，就像是打磨自己的心性；算法的复杂度，就像是境界的高低；而Debug，就像是剑术切磋，需要不断找出自己的漏洞和不足。</p>
+            <p>过了一段时间，这天，袁麻把我叫到了他的居所。</p>
+            <p>“陈煦缘，你最近的进步很大。我观察你很久了，觉得你可以学习更高深的功法了。”袁麻赞许地说道。</p>
+            <p>我大喜，连忙跪下行礼：“弟子感谢师傅栽培！请师傅赐教！”</p>
+            <p>袁麻笑了笑，从书架上取下了一本古朴的书册，递给我说：“这是我青云门的镇门之宝，《玄甲天书》，这里面记载了我门最高深的剑术心法和编程算法。你拿去好好研读，若有不懂之处，可以来问为师。”</p>
+            <p>我双手接过《玄甲天书》，激动得手都在颤抖。我知道，这是师傅对我莫大的信任和期望。</p>
+            <p>“陈煦缘。剑术可以强身，编程可以健脑，但最重要的是修心。心性不正，再高明的剑术和编程，也只是徒有其表。希望你能记住师父的话，做一个正直善良的修炼者。”</p>
+            <p>我郑重地点点头，将师父的话铭记在心。从今以后，我要更加刻苦地修炼，不仅钻研剑术和编程，也开始注重心性的磨练。我知道，这才是成为一名真正修炼者的根本。</p>
+            <p>（请完成后两节练习题，学习《玄甲天书》的内容）</p>
+            <p>闯关失败：请再学习学习后尝试吧。</p>
+            <p>闯关成功：修炼《玄甲天书》内容成功请进入后续剧情。</p>
+        </div>
+
+        <!-- Scroll bottom decoration -->
+        <div class="scroll-bottom">
+            <div class="scroll-curl"></div>
+        </div>
+    </div>
+
+    <script src="../../js/pauseMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Scroll Story - 第十关</title>
+    <link rel="stylesheet" href="../../css/pauseMenu.css">
+    <link rel="stylesheet" href="../../css/story.css">
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+        </ul>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="scroll-top">
+            <div class="scroll-curl"></div>
+        </div>
+        
+        <div class="scroll-container">
+            <button id="show-pause-menu" class="btn-retro">||</button>
+            <h1 class="scroll-title">第十关</h1>
+            
+            <!-- Story Content -->
+            <p>魔狼发出一声惨烈的嘶吼，拼命挣扎，但在“代码封印”的威力下，它的妖力被一点点抑制，行动也变得迟缓起来，</p>
+            <p>袁麻见状大喜，伸手一挥，也射出一道剑气与我的“代码封印”遥相呼应。金光和剑气交织在一起，将魔狼牢牢禁锢其中，再也无法动弹分毫！</p>
+            <p>魔狼发出最后一声绝望的嘶吼，终于再也支撑不住，轰然倒地。它的身躯迅速萎缩，转眼间又恢复成原来的模样，再无半点妖力波动。</p>
+            <p>“成功了！”</p>
+            <p>我和师兄姐们欢呼起来。袁麻也露出了欣慰的笑容，拍了拍我的肩膀。</p>
+            <p>狼妖恨恨地瞪了青云门众人一眼，哼了一声，终于扭头逃窜而去。其他残存的妖兽也纷纷仓皇逃离，转眼间消失得无影无踪。</p>
+            <p>就这样，在东林寺众僧的一片欢腾和感激中，青云门师徒告辞离去。临行前，东林寺长老特意将珍藏的一部《心经注解》赠与我，以表谢意。</p>
+            <p>这一程，我不仅认识到了我与师父身手的差距，自己的修为不足，而且产生了很多疑问。</p>
+            <p>“我们修真界，一直有两大阵营，正道，与魔道。”袁麻说道。他仿佛一眼就看穿了我的心思，自顾自地说了下去。</p>
+            <p>“魔道，专修一些歪门邪道，充满了负面情绪和黑暗能量。一旦走火入魔，后果不堪设想。妖族的魔宗编程，就是这样一种邪门功法。”</p>
+            <p>“师傅的意思是，这次妖族袭击东林寺，是正邪两道的对抗？”我问道。</p>
+            <p>“不错。”袁麻点点头，“而且我怀疑，这背后恐怕有更大的阴谋。你想啊，妖族平日里虽然也会祸害人间，但大多只是一些小打小闹，从未有过如此大规模、有组织的行动。这次它们连东林寺这样的名门大派都敢招惹，肯定有什么人在背后操纵。”</p>
+            <p>“目前还不能得知是谁，但可以肯定的是，修真界，正在面临一场前所未有的大劫。”</p>
+            <p>夕阳西下，师徒的身影渐渐没入群山。东林寺的危机暂时解除了，但是更大的风暴还在酝酿之中。</p>
+            <p>（请完成后两节练习题目）</p>
+            <p>闯关失败：请再次尝试！</p>
+            <p>闯关成功：我，一个误打误撞闯入修真界的程序员，将要再次踏上全新的征程。在“代码”即修真的世界里，在正邪两道的对抗里，我又将何去何从？</p>
+        </div>
+
+        <!-- Scroll bottom decoration -->
+        <div class="scroll-bottom">
+            <div class="scroll-curl"></div>
+        </div>
+    </div>
+
+    <script src="../../js/pauseMenu.js"></script>
+</body>
+</html>

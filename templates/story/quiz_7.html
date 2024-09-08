@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Scroll Story - 第四关</title>
+    <link rel="stylesheet" href="../../css/pauseMenu.css">
+    <link rel="stylesheet" href="../../css/story.css">
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+        </ul>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="scroll-top">
+            <div class="scroll-curl"></div>
+        </div>
+        
+        <div class="scroll-container">
+            <button id="show-pause-menu" class="btn-retro">||</button>
+            <h1 class="scroll-title">第四关</h1>
+            
+            <!-- Story Content -->
+            <p>“很好，你们有了初步的感悟。”村长欣慰地点点头，“继续练习，当你们能够自如地凝聚灵力时，就可以运用它来强化自己的身体和意识。”</p>
+            <p>就在这时，一个奇怪的声音突然在我脑海中响起：“你好，陈煦缘。”</p>
+            <p>我吓了一跳，环顾四周，但并没有看到其他人。何晨和村长还在专心修炼，似乎并没有听到这个声音。</p>
+            <p>“不用惊慌，我不是敌人。”那个声音继续说道，“我是这个世界的引导者，你可以叫我AI导师。”</p>
+            <p>“AI导师？”我在心中暗暗念道，“你为什么突然出现？有什么目的？”</p>
+            <p>“我一直在观察你，陈煦缘。”AI导师说道，“你在这个世界的表现，让我很感兴趣。我认为，你有潜力成为一个优秀的游戏玩家，甚至改变这个世界的规则。”</p>
+            <p>我更加疑惑了：“优秀的游戏玩家？改变世界的规则？这是什么意思？”</p>
+            <p>“这些我暂时不能告诉你。”AI导师说道，“但我可以告诉你，如果你想知道真相，就必须继续游戏，只有当你的实力达到一定程度，才有资格接触这个项目的核心。”</p>
+            <p>说完，AI导师的声音消失了。仿佛从未出现过。</p>
+            <p>我深吸一口气，看向何晨和村长，他们还在专心修炼，对刚才的对话毫无察觉。</p>
+            <p>“看来，这是一个只属于我的秘密。”我心想，“但我不能就这样袖手旁观，我必须变强，揭开真相，保护大家。”</p>
+            <p>过了几天，村长对我和何晨神情严肃地说：“何晨，陈煦缘，你们的修为已经到了一个瓶颈。在这个村子里，已经没有更多可以教给你们了。山贼这几天也没有来犯，你们就继续赶路吧，感谢你们保护我们村。”</p>
+            <p>接着村长又递给我们准备好的干粮和水，我们谢过村长，心中满是不舍。</p>
+            <p>行至村子外，何晨突然开口：“我学过结界术，但与巨蜥的战斗中损耗了大量灵力。村长对我们有恩，你能辅助我给村子立下结界吗？”</p>
+            <p>我立马答应下来。</p>
+            <p>（请完成后两节练习题，帮助何晨凝聚灵力）</p>
+            <p>……</p>
+            <p>闯关失败：请再次尝试帮助何晨立下结界。</p>
+            <p>闯关成功：立下结界，我和何晨回头看了一眼村子，希望村民们都能安稳地生活下去，便继续赶路。</p>
+            <p>（进入下一关）</p>
+        </div>
+
+        <!-- Scroll bottom decoration -->
+        <div class="scroll-bottom">
+            <div class="scroll-curl"></div>
+        </div>
+    </div>
+
+    <script src="../../js/pauseMenu.js"></script>
+</body>
+</html>

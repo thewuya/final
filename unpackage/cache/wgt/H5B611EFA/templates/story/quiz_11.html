@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Scroll Story - 第六关</title>
+    <link rel="stylesheet" href="../../css/pauseMenu.css">
+    <link rel="stylesheet" href="../../css/story.css">
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+        </ul>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="scroll-top">
+            <div class="scroll-curl"></div>
+        </div>
+        
+        <div class="scroll-container">
+            <button id="show-pause-menu" class="btn-retro">||</button>
+            <h1 class="scroll-title">第六关</h1>
+            
+            <!-- Story Content -->
+            <p>眼看我们都通过了考验，我和何晨高兴地击了个掌。袁麻上下打量了我们一番，说道：“你们资质不错，是练武的好料子。不过，我青云门讲究‘修心’，光有能力不行，还要有谦逊和礼节。”</p>
+            <p>我们连忙再次行礼，谦卑地说道：“弟子明白，请门主多多指教。”</p>
+            <p>袁麻满意地点点头，说道：“从今天起，你们就是青云门地弟子，要恪守门规，刻苦修炼，不可懈怠。”</p>
+            <p>我们喜出望外，连声答应。袁麻带我们走进山门，来到青云门地广场上。这里，数百名青云门弟子正在练剑。他们动作整齐划一，剑光闪烁，气势恢宏。我看得目瞪口呆，从未见过如此壮观的场面。</p>
+            <p>袁麻指着广场说道：“你看，这就是我青云门的修炼方式，我们主修剑术，讲究‘代码即剑道’，以编程之法，修炼内功。”</p>
+            <p>“代码即剑道？”我不解地问道。</p>
+            <p>袁麻解释道：“没错。在我青云门，每一个剑招，都对应着一段代码。弟子们修炼剑术，就是在优化自己的代码。代码越精简高效，剑招就越快越准。”</p>
+            <p>我恍然大悟：“原来如此。我还从未听说过这种修炼方式。”</p>
+            <p>袁麻微微一笑：“这就是我青云门的独特之处。好了，你们先和师兄们一起练剑，熟悉一下我们的基本功法。等你们有了一定基础，我会亲自传你更高深的剑术。”</p>
+            <p>我们点点头，加入了练剑的行列。</p>
+            <p>（请完成后两节考核题，练习基本剑法）</p>
+            <p>闯关失败：基本剑法练习得还不是很熟悉，请再次尝试吧。</p>
+            <p>闯关成功：在师兄们的指导下，我们很快掌握了青云门的基本剑法，手中长剑挥舞，剑光如电，虽然还略显生疏，但已隐隐有大家风范。</p>
+        </div>
+
+        <!-- Scroll bottom decoration -->
+        <div class="scroll-bottom">
+            <div class="scroll-curl"></div>
+        </div>
+    </div>
+
+    <script src="../../js/pauseMenu.js"></script>
+</body>
+</html>
+

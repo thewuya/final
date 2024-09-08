@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Scroll Story - 第一关</title>
+    <link rel="stylesheet" href="../../css/pauseMenu.css">
+    <link rel="stylesheet" href="../../css/story.css">
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+        </ul>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="scroll-top">
+            <div class="scroll-curl"></div>
+        </div>
+        
+        <div class="scroll-container">
+            <button id="show-pause-menu" class="btn-retro">||</button>
+            <h1 class="scroll-title">第一关</h1>
+            <p class="scroll-text">
+                <p>充满东方玄幻色彩的世界，清澈的溪流蜿蜒而过，两岸是郁郁葱葱的竹林，远处，几座高耸入云的山峰矗立在地平线上。我既期待着又控制不住地忐忑着，向灵山行进。</p>
+                <p>刚踏入山林，阳光便被重重叠叠的枝杈树叶格挡得严严实实，一股寒意渗过衣服，充斥身体。就在这时，一阵尖利的惨叫声，突然从远处传来。我一惊，朝声音传来的方向望去：还有其他人！？</p>
+                <p>只见竹林深处，一个身影正在慌不择路地逃窜。紧随其后的，是一只浑身长满鳞片，口吐黑火的巨蜥。那人影显然已经力竭，眼看就要被巨蜥追上。</p>
+                <p>我赶紧回想宝典上的招式，一边掐着手诀，几道编程题浮现在脑海中：</p>
+                <p>（请完成以下练习题，以成功使出技能，救助未知人）</p>
+                <p>……</p>
+                <p>闯关失败：眼看巨蜥逼近，可我对招式仍不熟悉，情急之下只好一把拉起那人撒腿就跑，决定修炼修炼之后再继续攀登灵山。</p>
+                <p>闯关成功：一道剑光从我指中射出，直直地刺入巨蜥的眉心，它发出一声哀嚎，轰然倒地，化作一团黑烟消散了。成功了！！</p>
+                <p>（进入下一关）</p>
+            </p>
+        </div>
+        
+        <!-- Scroll bottom decoration -->
+        <div class="scroll-bottom">
+            <div class="scroll-curl"></div>
+        </div>
+    </div>
+
+    <script src="../../js/pauseMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Scroll Story - 第二关</title>
+    <link rel="stylesheet" href="../../css/pauseMenu.css">
+    <link rel="stylesheet" href="../../css/story.css">
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+        </ul>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="scroll-top">
+            <div class="scroll-curl"></div>
+        </div>
+        
+        <div class="scroll-container">
+            <button id="show-pause-menu" class="btn-retro">||</button>
+            <h1 class="scroll-title">第二关</h1>
+            
+            <!-- Story Content -->
+            <p>这时我才看清那人戴着红色的头巾，瘫坐在地上，脸色惨白，浑身颤抖。我走过去扶起他，他惊魂未定，语无伦次地说：“这座山......太可怕了....我刚进来就遇到这只怪物......它追了我好远......我差点就死了。”</p>
+            <p>我安慰地拍了拍他的肩膀，心中隐隐不安，才刚进山就遇见这么强大的怪物，不知前路会有多么坎坷。“谢谢你救我！我叫何晨。”“哦，我叫陈煦缘。”“你也是要上山的吗？我们一起走吧！”我点点头，凶险的登山路上有个伴应该会更保险。</p>
+            <p>途中，我了解到何晨原是山脚下何家村村长的儿子，可在两个月前何家村遭到了怪物的攻击，他带着全村的希望想要上山去寻求修仙者的帮助。</p>
+            <p>到了傍晚，我们竟在山间发现了一座村落，不过也是，巴格怪还在山脚，没有举力攻山上间。正好我们可以找户人家落脚休整，明天继续赶路。</p>
+            <p>村民听闻我们的来意后，把我们带到了村长家住下，而村长也很热情地招待了我们，他告诉我们，如今四处动乱，逃难的人们不是往京城跑就是想要上山寻求修仙者的帮助，而这之中有一群人蛮横霸道直接跑到山上做起了山贼，拦截抢夺上山人的物资，在山间村落烧杀抢掠，他们最近因为这件事一边担心一边准备迎击。</p>
+            <p>就在这时，一阵急促的脚步声打断了我们的对话。一个年轻人慌慌张张地跑来，脸上满是惊恐。</p>
+            <p>“不好了，村长！山贼来袭，他们抢走了我们的粮食，还绑架了几个村民！”</p>
+            <p>“快，带我们去看看！”村长说道。</p>
+            <p>我们急匆匆地赶到村口，只见十几个彪形大汉，正得意洋洋地把劫掠来的粮食和财物捆在一起。几个村民被五花大绑，嘴里塞着破布，只能发出呜呜的悲鸣。</p>
+            <p>“放了他们！”何晨大喝一声，和我一起冲上前去。</p>
+            <p>山贼头目转过身，打量了我们一眼，嘴角露出一丝不屑的冷笑：“小子，你们是什么人？居然敢在我面前撒野？”</p>
+            <p>我咬了咬牙，强压下心中的怒火：“你别管我是谁，我不能让你们伤害无辜的村民！”</p>
+            <p>“就凭你？信不信我一巴掌就能把你拍飞？”</p>
+            <p>山贼头目，挥手就是一记响亮的耳光。</p>
+            <p>（请完成后两节练习题，以成功使用防御罩）</p>
+            <p>……</p>
+            <p>闯关失败：你被重重扇倒在地，失去了意识。请在修炼后重新挑战。</p>
+            <p>闯关成功：就在山贼头目的手即将触及我面门的一刹那，一股无形的力量突然弹开了他的手，并使他向后踉跄了好几步。山贼头目瞪大了眼睛，不敢置信地看着自己的手，他意识到形势不妙，带着手下仓皇地逃离了村子。</p>
+            <p>（进入下一关）</p>
+        </div>
+
+        <!-- Scroll bottom decoration -->
+        <div class="scroll-bottom">
+            <div class="scroll-curl"></div>
+        </div>
+    </div>
+
+    <script src="../../js/pauseMenu.js"></script>
+</body>
+</html>

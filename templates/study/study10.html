@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>循环</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/study.css">
+        <link rel="stylesheet" href="../../css/prism.css">
+        <link rel="stylesheet" href="../../css/back_button.css">
+        <link rel="stylesheet" href="../../css/pauseMenu.css">
+    </head>
+    <body style="font-family: HZKPixel;">
+      
+        <!-- Pause Button -->
+      <audio id="music-player" autoplay>
+        <source src="../../audio/question.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <button id="show-pause-menu" class="btn-retro">||</button>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a  href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a  id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+            
+        </ul>
+    </div>
+
+
+      <div class="parent">
+        <div class="child">
+          <div class="row">
+            <div class="col-1"  >
+              <button class="dropdown-button" data-menu="menu1">介绍&darr;</button>
+                <div id="menu1" class="dropdown-content">
+                <a class="btn-retro" href="../../templates/study/study1.html">C 教程</a>
+                <a class="btn-retro" href="../../templates/study/study2.html">程序结构</a>
+                <a class="btn-retro" href="../../templates/study/study3.html">基础语法</a>
+                <a class="btn-retro" href="../../templates/study/study4.html">数据类型</a>
+                </div>
+                <button class="dropdown-button" data-menu="menu2">基础&darr;</button>
+                <div id="menu2" class="dropdown-content">
+                <a class="btn-retro" href="../../templates/study/study5.html">变量</a>
+                <a class="btn-retro" href="../../templates/study/study6.html">常量</a>
+                <a class="btn-retro" href="../../templates/study/study7.html">存储类</a>
+                <a class="btn-retro" href="../../templates/study/study8.html">运算符</a>
+                <a class="btn-retro" href="../../templates/study/study9.html">判断</a>
+                </div>
+                <button class="dropdown-button" data-menu="menu3">进阶&darr;</button>
+                <div id="menu3" class="dropdown-content">
+                <a class="btn-retro" href="../../templates/study/study10.html">循环</a>
+                <a class="btn-retro" href="../../templates/study/study11.html">函数</a>
+                <a class="btn-retro" href="../../templates/study/study12.html">作用域</a>
+                <a class="btn-retro" href="../../templates/study/study13.html">数组</a>
+                <a class="btn-retro" href="../../templates/study/study14.html">枚举</a>
+                <a class="btn-retro" href="../../templates/study/study15.html">指针</a>
+                <a class="btn-retro" href="../../templates/study/study16.html">字符串</a>
+                <a class="btn-retro" href="../../templates/study/study17.html">结构体</a>
+                </div>
+            </div>
+
+            <div class="col-9">
+              <h5>C 循环</h5>
+              <p>有的时候，我们可能需要多次执行同一块代码。一般情况下，语句是按顺序执行的：函数中的第一个语句先执行，接着是第二个语句，依此类推。
+
+                编程语言提供了更为复杂执行路径的多种控制结构。</p>
+                <h6>while 循环</h6>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="code-block">                                        <pre><code class="language-clike">
+                              #include &lt;stdio.h&gt
+                              
+ 
+                                int main ()
+                                {
+                                   /* 局部变量定义 */
+                                   int a = 10;
+                                
+                                   /* while 循环执行 */
+                                   while( a < 20 )
+                                   {
+                                      printf("a 的值： %d\n", a);
+                                      a++;
+                                   }
+                                 
+                                   return 0;
+                                }
+                              </code></pre>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="code-block">                                        <pre><code class="language-clike">
+                          a 的值： 10
+                          a 的值： 11
+                          a 的值： 12
+                          a 的值： 13
+                          a 的值： 14
+                          a 的值： 15
+                          a 的值： 16
+                          a 的值： 17
+                          a 的值： 18
+                          a 的值： 19
+                          
+            
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h6>for 循环</h6>
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="code-block">                                        <pre><code class="language-clike">
+                        #include <stdio.h>
+ 
+                          int main ()
+                          {
+                             /* for 循环执行 */
+                             for( int a = 10; a < 20; a = a + 1 )
+                             {
+                                printf("a 的值： %d\n", a);
+                             }
+                           
+                             return 0;
+                          }
+          
+                          </code></pre>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="code-block">                                        <pre><code class="language-clike">
+                      a 的值： 10
+                      a 的值： 11
+                      a 的值： 12
+                      a 的值： 13
+                      a 的值： 14
+                      a 的值： 15
+                      a 的值： 16
+                      a 的值： 17
+                      a 的值： 18
+                      a 的值： 19
+                      
+        
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h6>do-while 循环</h6>
+        <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="code-block">                                        <pre><code class="language-clike">
+                    #include <stdio.h>
+ 
+                      int main ()
+                      {
+                         /* 局部变量定义 */
+                         int a = 10;
+                      
+                         /* do 循环执行，在条件被测试之前至少执行一次 */
+                         do
+                         {
+                             printf("a 的值： %d\n", a);
+                             a = a + 1;
+                         }while( a < 20 );
+                       
+                         return 0;
+                      }
+      
+                      </code></pre>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="code-block">                                        <pre><code class="language-clike">
+                  a 的值： 10
+                  a 的值： 11
+                  a 的值： 12
+                  a 的值： 13
+                  a 的值： 14
+                  a 的值： 15
+                  a 的值： 16
+                  a 的值： 17
+                  a 的值： 18
+                  a 的值： 19
+                  
+    
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h5>循环控制语句</h5>
+    <p>循环控制语句改变你代码的执行顺序。通过它你可以实现代码的跳转。</p>
+    <p>break 语句	终止循环或 switch 语句，程序流将继续执行紧接着循环或 switch 的下一条语句。</p>
+    <p>continue 语句	告诉一个循环体立刻停止本次循环迭代，重新开始下次循环迭代。</p>
+    <p>goto 语句	将控制转移到被标记的语句。但是不建议在程序中使用 goto 语句。</p>
+    <h5>无限循环</h5>
+    <p>如果条件永远不为假，则循环将变成无限循环。for 循环在传统意义上可用于实现无限循环。由于构成循环的三个表达式中任何一个都不是必需的，您可以将某些条件表达式留空来构成一个无限循环。</p>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="code-block">                                        <pre><code class="language-clike">
+                  #include &lt;stdio.h&gt
+              
+ 
+                    int main ()
+                    {
+                       for( ; ; )
+                       {
+                          printf("该循环会永远执行下去！\n");
+                       }
+                       return 0;
+                    }
+                  </code></pre>
+              </div>
+          </div>
+      </div>
+  </div>
+  <p>当条件表达式不存在时，它被假设为真。您也可以设置一个初始值和增量表达式，但是一般情况下，C 程序员偏向于使用 for(;;) 结构来表示一个无限循环。</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="../../js/pauseMenu.js"></script>
+    <script src="../../js/study.js" ></script>
+        <script src="../../js/bootstrap.js" defer></script>
+        <script src="../../js/prism.js"></script>
+    </body>
+</html>

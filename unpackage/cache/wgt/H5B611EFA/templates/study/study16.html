@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>字符串</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/study.css">
+        <link rel="stylesheet" href="../../css/prism.css">
+        <link rel="stylesheet" href="../../css/back_button.css">
+        <link rel="stylesheet" href="../../css/pauseMenu.css">
+    </head>
+    <body style="font-family: HZKPixel;">
+      
+        <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+      <source src="../../audio/question.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+  </audio>
+
+  <!-- Pause Menu -->
+  <button id="show-pause-menu" class="btn-retro">||</button>
+
+  <!-- Pause Menu -->
+  <div id="pause-menu" class="menu" style="display: none;">
+      <h2>Paused</h2>
+      <ul>
+          <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+          <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+          <li><a  href="../menu_experience.html" class="btn-retro">放弃</a></li>
+          <li><a  id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+          
+      </ul>
+  </div>
+
+      <div class="parent">
+        <div class="child">
+          <div class="row">
+            <div class="col-1"  >
+              <button class="dropdown-button" data-menu="menu1">介绍&darr;</button>
+                <div id="menu1" class="dropdown-content">
+                <a class="btn-retro" href="../../templates/study/study1.html">C 教程</a>
+                <a class="btn-retro" href="../../templates/study/study2.html">程序结构</a>
+                <a class="btn-retro" href="../../templates/study/study3.html">基础语法</a>
+                <a class="btn-retro" href="../../templates/study/study4.html">数据类型</a>
+                </div>
+                <button class="dropdown-button" data-menu="menu2">基础&darr;</button>
+                <div id="menu2" class="dropdown-content">
+                <a class="btn-retro" href="../../templates/study/study5.html">变量</a>
+                <a class="btn-retro" href="../../templates/study/study6.html">常量</a>
+                <a class="btn-retro" href="../../templates/study/study7.html">存储类</a>
+                <a class="btn-retro" href="../../templates/study/study8.html">运算符</a>
+                <a class="btn-retro" href="../../templates/study/study9.html">判断</a>
+                </div>
+                <button class="dropdown-button" data-menu="menu3">进阶&darr;</button>
+                <div id="menu3" class="dropdown-content">
+                <a class="btn-retro" href="../../templates/study/study10.html">循环</a>
+                <a class="btn-retro" href="../../templates/study/study11.html">函数</a>
+                <a class="btn-retro" href="../../templates/study/study12.html">作用域</a>
+                <a class="btn-retro" href="../../templates/study/study13.html">数组</a>
+                <a class="btn-retro" href="../../templates/study/study14.html">枚举</a>
+                <a class="btn-retro" href="../../templates/study/study15.html">指针</a>
+                <a class="btn-retro" href="../../templates/study/study16.html">字符串</a>
+                <a class="btn-retro" href="../../templates/study/study17.html">结构体</a>
+                </div>
+            </div>
+
+            <div class="col-9">
+              <h5>C 字符串</h5>
+              <p>在 C 语言中，字符串实际上是使用空字符 \0 结尾的一维字符数组。因此，\0 是用于标记字符串的结束。
+
+                空字符（Null character）又称结束符，缩写 NUL，是一个数值为 0 的控制字符，\0 是转义字符，意思是告诉编译器，这不是字符 0，而是空字符。
+                
+                下面的声明和初始化创建了一个 RUNOOB 字符串。由于在数组的末尾存储了空字符 \0，所以字符数组的大小比单词 RUNOOB 的字符数多一个。</p>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="code-block">                                        <pre><code class="language-clike">
+                            char site[7] = {'R', 'U', 'N', 'O', 'O', 'B', '\0'};
+
+              
+                              </code></pre>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <p>依据数组初始化规则，您可以把上面的语句写成以下语句：</p>
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="code-block">                                        <pre><code class="language-clike">
+                          char site[] = "RUNOOB";
+
+            
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="code-block">                                        <pre><code class="language-clike">
+                          #include &lt;stdio.h&gt
+                        
+ 
+                            int main ()
+                            {
+                               char site[7] = {'R', 'U', 'N', 'O', 'O', 'B', '\0'};
+                             
+                               printf(" %s\n", site );
+                             
+                               return 0;
+                            }
+                          </code></pre>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <p>当上面的代码被编译和执行时，它会产生下列结果：
+
+            RUNOOB</p>
+            <p>C 中有大量操作字符串的函数：</p>
+            <ol>
+              <li>strcpy(s1, s2);
+                复制字符串 s2 到字符串 s1。</li>
+                <li>strcat(s1, s2);
+                  连接字符串 s2 到字符串 s1 的末尾。</li>
+                  <li>	strlen(s1);
+                    返回字符串 s1 的长度。</li>
+                    <li>strcmp(s1, s2);
+                      如果 s1 和 s2 是相同的，则返回 0；如果 s1<s2 则返回小于 0；如果 s1>s2 则返回大于 0。</li>
+                        <li>strchr(s1, ch);
+                          返回一个指针，指向字符串 s1 中字符 ch 的第一次出现的位置。</li>
+                          <li>strstr(s1, s2);
+                            返回一个指针，指向字符串 s1 中字符串 s2 的第一次出现的位置。</li>
+
+            </ol>
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="code-block">                                        <pre><code class="language-clike">
+                          #include &lt;stdio.h&gt
+                            #include &ltstring.h&gt
+                             
+                            int main ()
+                            {
+                               char str1[14] = "runoob";
+                               char str2[14] = "google";
+                               char str3[14];
+                               int  len ;
+                             
+                               /* 复制 str1 到 str3 */
+                               strcpy(str3, str1);
+                               printf("strcpy( str3, str1) :  %s\n", str3 );
+                             
+                               /* 连接 str1 和 str2 */
+                               strcat( str1, str2);
+                               printf("strcat( str1, str2):   %s\n", str1 );
+                             
+                               /* 连接后，str1 的总长度 */
+                               len = strlen(str1);
+                               printf("strlen(str1) :  %d\n", len );
+                             
+                               return 0;
+                            }
+                          </code></pre>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <p>当上面的代码被编译和执行时，它会产生下列结果：</p>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="code-block">                                        <pre><code class="language-clike">
+                      strcpy( str3, str1) :  runoob
+                      strcat( str1, str2):   runoobgoogle
+                      strlen(str1) :  12
+                      
+        
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="../../js/pauseMenu.js"></script>
+    <script src="../../js/study.js" ></script>
+        <script src="../../js/bootstrap.js" defer></script>
+        <script src="../../js/prism.js"></script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/quiz.css">
+    <link rel="stylesheet" href="../css/pauseMenu.css">
+    <title>Quiz 8</title>
+
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <button id="show-pause-menu" class="btn-retro">||</button>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a  href="menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a  id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+            
+        </ul>
+    </div>
+
+    <a id="level">level_8</a>
+    <div id="quizContainer">
+
+    </div>
+    <button id="submitQuiz">提交答案</button>
+    <br><br>
+    <button><a href="" id="next_quiz">?</a></button>
+  
+    <a id="story_link" href="" target="_blank"></a>
+    <div id="score">score 0/10</div>
+    <script src="../js/quiz.js"></script>
+    <script src="../js/pauseMenu.js"></script>
+</body>
+</html>

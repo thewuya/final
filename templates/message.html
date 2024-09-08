@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>信封</title>
+    <link rel="stylesheet" href="../css/message.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../css/back_button.css">
+    <style>
+        @font-face {
+            font-family: 'pixel-hanzi';
+            src: url('../fonts/hzk-pixel-16px.ttf');
+        }
+    </style>
+</head>
+<body>
+    <a  href="menu.html" class="small-retro back-retro">回去</a>
+    <div class="book-wrapper">
+        <div class="book-content">
+            <div id="messageList" class="message-list"></div>
+            
+
+            <div class="friend-select">
+                <label for="friendList">Select Friend:</label>
+                <select id="friendList"></select>
+            </div>
+
+            <form id="sendMessageForm" class="message-form">
+                <input type="text" id="message" placeholder="Message" required>
+                <button type="submit" class="send-button">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>

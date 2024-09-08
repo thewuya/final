@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Scroll Story - 第五关</title>
+    <link rel="stylesheet" href="../../css/pauseMenu.css">
+    <link rel="stylesheet" href="../../css/story.css">
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+        </ul>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="scroll-top">
+            <div class="scroll-curl"></div>
+        </div>
+        
+        <div class="scroll-container">
+            <button id="show-pause-menu" class="btn-retro">||</button>
+            <h1 class="scroll-title">第五关</h1>
+            
+            <!-- Story Content -->
+            <p>经过几天的赶路，一座巍峨雄伟的山门映入眼帘，门前有两座石狮，气势非凡。门上悬挂着一块巨大的匾额，上书“青云门”三个大字，笔力苍劲，气度不凡。</p>
+            <p>“青云门？这是个干啥的？”我疑惑地说道。何晨立马激动地说：“青云门派啊！修炼C语言一族下也有很多门派。青云门，擅长剑术；丹霞派，擅长炼丹；天机阁，擅长占卜和机关术，还有一个幽冥宗……他们修炼的是‘鬼道’，吸取他人生命力为己用，非常邪门。不过这些里面，还是灵山山顶的C-GEEK实力最强，但也最神秘、与世隔绝。”</p>
+            <p>这时，山门打开，一位身着青袍的年轻弟子走了出来。看到我们，他露出一个友善的笑容道：“两位道友，你们是来拜访我们青云门的吗？”</p>
+            <p>我们连忙上前行礼，恭敬地报上来历，表明想要学习剑术和修仙之道，求见掌门。说完，那位弟子便引领我们穿过山门，朝内部走去。一路上，我看见许多青云门的弟子，他们或是在练剑，或是在修炼，一片生机勃勃的景象。</p>
+            <p>来到宏伟的大殿前，那位弟子让我们稍事等待，他去通报掌门一声。</p>
+            <p>过了片刻，大殿门开，一位身着青袍的中年男子走了出来。他目光如炬，须发皆白，一看就是修为高深之人。</p>
+            <p>“在下青云门门主，袁麻。”中年男子拱手说道，“小友可是来我青云门求学的？”</p>
+            <p>我和何晨连忙行礼，恭恭敬敬地说出自己的来历，并表明了求学的意愿。</p>
+            <p>袁麻点点头，说：“加入我们门派还是有一定门槛的。那边的藤上结有两个葫芦，你们有三次机会，用编程之法幻化出剑气击中葫芦，就能入我门派。”</p>
+            <p>何晨摩拳擦掌，抢先要第一个尝试。只见他双眼直直地盯着葫芦，眉头紧皱，双手掐着手诀，嗖地一声，一道闪着白光的剑气飞过。可再一看，那葫芦竟毫无变化，原来是那剑气飞歪了，根本没挨着葫芦。他一脸懊悔，有些尴尬地深呼了一口气，静下心来进行第二次尝试，好在这次那剑气直直地冲向葫芦中央，留下了一个穿孔。</p>
+            <p>接下来就到我了，我一定要成功！</p>
+            <p>（请完成后两节练习题，使出剑气击中葫芦）</p>
+            <p>……</p>
+            <p>闯关失败：一道剑气使出，可它到了半道便消失不见。请进行二次尝试。</p>
+            <p>闯关成功：我闭上双眼，聚集精神，在脑海中幻化出剑气击中葫芦的场景。砰的一声，剑气狠狠地击中了葫芦，葫芦被炸成了碎片。</p>
+        </div>
+
+        <!-- Scroll bottom decoration -->
+        <div class="scroll-bottom">
+            <div class="scroll-curl"></div>
+        </div>
+    </div>
+
+    <script src="../../js/pauseMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'pixel-hanzi';
+    src: url('../fonts/hzk-pixel-16px.ttf'); 
+}
+
+/* General Styles */
+body {
+    background: #f4f1e3; /* Light beige background for a cohesive look */
+    color: #A0522D; /* Saddle brown text for contrast */
+    font-family: 'pixel-hanzi', sans-serif;
+    cursor: url("../pictures/cursor.png"), auto; 
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #D2691E; /* Chocolate brown border */
+    border-radius: 50%; /* Circular profile picture */
+}
+
+/* Profile Information Box */
+.profile-info {
+    background: #f4f1e3; /* Light beige for profile info */
+    border: 2px solid #A0522D; /* Saddle brown border */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Slight shadow for depth */
+    color: #A0522D; /* Saddle brown text */
+}
+
+/* Friends List */
+.friends {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    background: #D2691E; /* Chocolate brown for list items */
+    border: 1px solid #A0522D; /* Saddle brown border */
+    color: #f4f1e3; /* Light beige text for readability */
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f1e3; /* Light beige track background */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A0522D; /* Saddle brown thumb */
+    border-radius: 10px; /* Rounded scrollbar thumb */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-info, .friends {
+        padding: 10px;
+    }
+}
+
+/* Button Styles */
+.btn-danger, .add-friend-btn {
+    background-color: #D2691E; /* Chocolate brown button background */
+    border: 1px solid #A0522D; /* Saddle brown border */
+    color: #f4f1e3; /* Light beige text */
+}
+
+.btn-danger:hover, .add-friend-btn:hover {
+    background-color: #A0522D; /* Saddle brown on hover */
+    color: #f4f1e3; /* Light beige text */
+}

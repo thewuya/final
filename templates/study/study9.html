@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>判断</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/study.css">
+        <link rel="stylesheet" href="../../css/prism.css">
+        <link rel="stylesheet" href="../../css/back_button.css">
+        <link rel="stylesheet" href="../../css/pauseMenu.css">
+    </head>
+    <body style="font-family: HZKPixel;">
+      
+      <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+      <source src="../../audio/question.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+  </audio>
+
+  <!-- Pause Menu -->
+  <button id="show-pause-menu" class="btn-retro">||</button>
+
+  <!-- Pause Menu -->
+  <div id="pause-menu" class="menu" style="display: none;">
+      <h2>Paused</h2>
+      <ul>
+          <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+          <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+          <li><a  href="../menu_experience.html" class="btn-retro">放弃</a></li>
+          <li><a  id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+          
+      </ul>
+  </div>
+
+      <div class="parent">
+        <div class="child">
+          <div class="row">
+            <div class="col-1"  >
+              <button class="dropdown-button" data-menu="menu1">介绍&darr;</button>
+                <div id="menu1" class="dropdown-content">
+                <a class="btn-retro" href="../../templates/study/study1.html">C 教程</a>
+                <a class="btn-retro" href="../../templates/study/study2.html">程序结构</a>
+                <a class="btn-retro" href="../../templates/study/study3.html">基础语法</a>
+                <a class="btn-retro" href="../../templates/study/study4.html">数据类型</a>
+                </div>
+                <button class="dropdown-button" data-menu="menu2">基础&darr;</button>
+                <div id="menu2" class="dropdown-content">
+                <a class="btn-retro" href="../../templates/study/study5.html">变量</a>
+                <a class="btn-retro" href="../../templates/study/study6.html">常量</a>
+                <a class="btn-retro" href="../../templates/study/study7.html">存储类</a>
+                <a class="btn-retro" href="../../templates/study/study8.html">运算符</a>
+                <a class="btn-retro" href="../../templates/study/study9.html">判断</a>
+                </div>
+                <button class="dropdown-button" data-menu="menu3">进阶&darr;</button>
+                <div id="menu3" class="dropdown-content">
+                <a class="btn-retro" href="../../templates/study/study10.html">循环</a>
+                <a class="btn-retro" href="../../templates/study/study11.html">函数</a>
+                <a class="btn-retro" href="../../templates/study/study12.html">作用域</a>
+                <a class="btn-retro" href="../../templates/study/study13.html">数组</a>
+                <a class="btn-retro" href="../../templates/study/study14.html">枚举</a>
+                <a class="btn-retro" href="../../templates/study/study15.html">指针</a>
+                <a class="btn-retro" href="../../templates/study/study16.html">字符串</a>
+                <a class="btn-retro" href="../../templates/study/study17.html">结构体</a>
+                </div>
+            </div>
+
+            <div class="col-9">
+              <h5>C 判断</h5>
+              <p>判断结构要求程序员指定一个或多个要评估或测试的条件，以及条件为真时要执行的语句（必需的）和条件为假时要执行的语句（可选的）。
+
+                C 语言把任何非零和非空的值假定为 true，把零或 null 假定为 false。</p>
+                <hr>
+                <h5>判断语句</h5>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="code-block">                                        <pre><code class="language-clike">
+                              #include &lt;stdio.h&gt
+                              
+ 
+                                int main ()
+                                {
+                                   /* 局部变量定义 */
+                                   int a = 10;
+                                 
+                                   /* 使用 if 语句检查布尔条件 */
+                                   if( a < 20 )
+                                   {
+                                       /* 如果条件为真，则输出下面的语句 */
+                                       printf("a 小于 20\n" );
+                                   }
+                                   printf("a 的值是 %d\n", a);
+                                 
+                                   return 0;
+                                }
+                              </code></pre>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <p>当上面的代码被编译和执行时，它会产生下列结果：</p>
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="code-block">                                        <pre><code class="language-clike">
+                          a 小于 20
+                          a 的值是 10
+                          
+            
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <h6>? : 运算符(三元运算符)</h6>
+                <p>我们已经在前面的章节中讲解了 条件运算符 ? :，可以用来替代 if...else 语句。它的一般形式如下：
+
+                  Exp1 ? Exp2 : Exp3;
+                  其中，Exp1、Exp2 和 Exp3 是表达式。请注意，冒号的使用和位置。
+                  
+                  ? 表达式的值是由 Exp1 决定的。如果 Exp1 为真，则计算 Exp2 的值，结果即为整个表达式的值。如果 Exp1 为假，则计算 Exp3 的值，结果即为整个表达式的值。</p>
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="code-block">                                        <pre><code class="language-clike">
+                                #include &lt;stdio.h&gt
+                                
+ 
+                                  int main()
+                                  {
+                                      int num;
+                                   
+                                      printf("输入一个数字 : ");
+                                      scanf("%d",&num);
+                                   
+                                      (num%2==0)?printf("偶数"):printf("奇数");
+                                  }
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="../../js/study.js" ></script>
+    <script src="../../js/pauseMenu.js"></script>
+        <script src="../../js/bootstrap.js" defer></script>
+        <script src="../../js/prism.js"></script>
+    </body>
+</html>

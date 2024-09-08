@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Art Levels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/pauseMenu.css">
+    <link rel="stylesheet" href="../css/back_button.css">
+    <style>
+        @font-face {
+            font-family: 'pixel-hanzi';
+            src: url('../fonts/hzk-pixel-16px.ttf'); 
+        }
+        body {
+            font-family: 'pixel-hanzi', sans-serif;
+            cursor: url("../pictures/cursor.png"), auto; 
+            margin: 0;
+            background-image: url("../pictures/level_backgorund.png"); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* Changed to column layout */
+            align-items: center;
+            justify-content: center;
+            overflow-x: auto; /* Allow horizontal scrolling */
+        }
+
+        .title {
+            font-family: 'pixel-hanzi', sans-serif;
+            font-size: 4rem; /* Large text size */
+            color: #fff; /* White color for visibility */
+            text-shadow: 2px 2px 5px #000; /* Glowing effect */
+            margin-bottom: 20px;
+            animation: pulse 1.5s infinite; /* Add animation */
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 90vw; /* Adjust as needed */
+            overflow-x: auto; /* Ensure horizontal scrolling */
+            overflow-y: hidden; /* Hide vertical scroll if not needed */
+        }
+
+        button {
+            background: #e08356; 
+            border: 3px solid #c94b28; 
+            color: #fff; 
+            font-size: 14px; 
+            padding: 10px 20px; 
+            margin: 5px; 
+            cursor: pointer;
+            text-transform: uppercase; 
+            outline: none; 
+            transition: all 0.3s ease; 
+            box-shadow: 0px 4px 0px #c94b28; 
+            font-family: 'pixel-hanzi', sans-serif; 
+            clip-path: polygon(
+                0px calc(100% - 2px),
+                2px calc(100% - 2px),
+                2px 100%,
+                calc(100% - 2px) 100%,
+                calc(100% - 2px) calc(100% - 2px),
+                100% calc(100% - 2px),
+                100% 2px,
+                calc(100% - 2px) 2px,
+                calc(100% - 2px) 0px,
+                2px 0px,
+                2px 2px,
+                0px 2px
+            ); 
+        }
+
+        button:hover {
+            background-color: #d4890f;
+            transform: scale(1.1);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 600px) {
+            button {
+                font-size: 12px; 
+                padding: 8px 16px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1200px) {
+            button {
+                font-size: 14px; 
+                padding: 10px 18px;
+            }
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <a  href="menu.html" class="small-retro back-retro">回去</a>
+    <div class="title">考核</div> <!-- Updated text styling -->
+    <div class="button-container">
+        <button id="level_0" type="button"><a href="quiz_1.html">Level 1</a></button>
+        <button id="level_1" type="button"><a href="quiz_2.html">Level 2</a></button>
+        <button id="level_2" type="button"><a href="quiz_3.html">Level 3</a></button>
+        <button id="level_3" type="button"><a href="quiz_4.html">Level 4</a></button>
+        <button id="level_4" type="button"><a href="quiz_5.html">Level 5</a></button>
+        <button id="level_5" type="button"><a href="quiz_6.html">Level 6</a></button>
+        <button id="level_6" type="button"><a href="quiz_7.html">Level 7</a></button>
+        <button id="level_7" type="button"><a href="quiz_8.html">Level 8</a></button>
+        <button id="level_8" type="button"><a href="quiz_9.html">Level 9</a></button>
+        <button id="level_9" type="button"><a href="quiz_10.html">Level 10</a></button>
+        <button id="level_10" type="button"><a href="quiz_11.html">Level 11</a></button>
+        <button id="level_11" type="button"><a href="quiz_12.html">Level 12</a></button>
+        <button id="level_12" type="button"><a href="quiz_13.html">Level 13</a></button>
+        <button id="level_13" type="button"><a href="quiz_14.html">Level 14</a></button>
+        <button id="level_14" type="button"><a href="quiz_15.html">Level 15</a></button>
+        <button id="level_15" type="button"><a href="quiz_16.html">Level 16</a></button>
+    </div>
+    <script src="../js/level.js" defer></script>
+</body>
+</html>

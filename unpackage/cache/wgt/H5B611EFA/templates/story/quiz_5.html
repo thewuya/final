@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Scroll Story - 第三关</title>
+    <link rel="stylesheet" href="../../css/pauseMenu.css">
+    <link rel="stylesheet" href="../../css/story.css">
+</head>
+<body>
+
+    <!-- Pause Button -->
+    <audio id="music-player" autoplay>
+        <source src="../audio/index.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Pause Menu -->
+    <div id="pause-menu" class="menu" style="display: none;">
+        <h2>Paused</h2>
+        <ul>
+            <li><button onclick="togglePauseMenu()" class="btn-retro">Resume</button></li>
+            <li><a id="music_button" onclick="play_music()" class="btn-retro">音乐</a></li>
+            <li><a href="../menu_experience.html" class="btn-retro">放弃</a></li>
+            <li><a id="logoutButton" onclick="handleLogout()" class="btn-retro">登出</a></li>
+        </ul>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="scroll-top">
+            <div class="scroll-curl"></div>
+        </div>
+        
+        <div class="scroll-container">
+            <button id="show-pause-menu" class="btn-retro">||</button>
+            <h1 class="scroll-title">第三关</h1>
+            
+            <!-- Story Content -->
+            <p>人质获救，村民们纷纷围了上来，感谢我和何晨。我谦虚地笑了笑，心中却久久不能平静。回到村长家中，村长对我们表示了感谢。我告诉他我们明天要继续赶路，不能在这里多逗留，建议村中的青壮年们多修炼，增强自己的实力。</p>
+            <p>“听闻你是才修炼不久，我这有凝聚灵力的方法，要不你们在我们村子里再多呆几天，修炼灵力的同时，也帮助我们确保那些山贼不会再犯。”村长一脸期待地说。</p>
+            <p>我和何晨简单讨论之后，答应了村长。</p>
+            <p>第二天一早，吃过简单的早餐，村长已经在等我们了，看到我们，他露出了慈祥的笑容。</p>
+            <p>“今天我要教你们如何凝聚灵力。这是修炼的基础，也是提升实力的关键。”村长说道。</p>
+            <p>在村长的指导下，我们盘腿而坐，开始学习冥想和吐纳的技巧。村长告诉我们，要用心感受天地间流淌的能量，然后将其引入体内，化为己用。</p>
+            <p>起初，我们两人都感到很困难。我的脑海中总是浮现出现实世界的种种，让我难以静心。何晨则是心有余悸，上次遇袭的场景总是在他眼前闪现，让他无法放松。</p>
+            <p>“不要着急，修炼是一个循序渐进的过程。”村长看出两人的困扰，微笑着说道，“关键是要放下杂念，专注于当下。试着去感受，去体会，慢慢地，你们就能找到诀窍。”</p>
+            <p>我深呼一口气，重新闭上眼，开始专注冥想。</p>
+            <p>（请静下心来，完成后两节练习题）</p>
+            <p>……</p>
+            <p>闯关失败：凝聚灵力失败，请摒除杂念，静下心来，再次尝试。</p>
+            <p>闯关成功：渐渐地，一股微弱的能量开始在我的体内流转。起初，这股能量还很微弱，稍不留神就会消散。但随着我不断调理呼吸，调节心神，这股能量开始变得越来越强大，越来越稳定。</p>
+            <p>（进入下一关）</p>
+        </div>
+
+        <!-- Scroll bottom decoration -->
+        <div class="scroll-bottom">
+            <div class="scroll-curl"></div>
+        </div>
+    </div>
+
+    <script src="../../js/pauseMenu.js"></script>
+</body>
+</html>
